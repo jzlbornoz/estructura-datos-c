@@ -6,5 +6,9 @@ int main()
 {
     int edad = 0;
     edad = 23;
-    cout << edad;
+    const char nombre = 'j';
+    int noteList[] = {20, 12, 16, 12, 18};
+    cout << edad << endl;
+    cout << nombre << endl;
+    cout << noteList[2] << endl;
 }
