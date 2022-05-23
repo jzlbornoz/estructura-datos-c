@@ -3,8 +3,8 @@
 using namespace std;
 
 int main()
-{   
-    //CICLOS FOR
+{
+    // CICLOS FOR
     int Notas[] = {
         20,
         10,
@@ -19,4 +19,29 @@ int main()
     {
         cout << "-" << Notas[i] << endl;
     }
+    // While
+    while (true)
+    {
+        char respuesta;
+        cout << "Esto es un ciclo while" << endl;
+        cout << "Desea terminar?(y/n): " << endl;
+        cin >> respuesta;
+        if (respuesta == 'y')
+        {
+            cout << "Hasta luego..." << endl;
+            break;
+        }
+    }
+    // Do-While
+    do {
+        char respuesta;
+        cout << "Esto es un ciclo do-while" << endl;
+        cout << "Desea terminar?(y/n): " << endl;
+        cin >> respuesta;
+        if (respuesta == 'y')
+        {
+            cout << "Hasta luego..." << endl;
+            break;
+        }
+    } while (true);
 }
