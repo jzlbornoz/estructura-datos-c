@@ -19,6 +19,7 @@ int main()
     float nota4;
     char respuesta = 'y';
     system("clear");
+
     do
     {
         cout << "=======Bienvenido========" << endl
@@ -44,5 +45,6 @@ int main()
             char respuesta = 'n';
             system("clear");
         }
+        
     } while (respuesta == 'n');
 }
