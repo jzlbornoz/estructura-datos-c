@@ -7,7 +7,7 @@ int main()
 {
     int time;
     string nombre;
-    cout << "Bienvenido, Por favor ingresa tu nombre y la hora que es actualmente (Formato 24h): "
+    cout << "Bienvenido, Por favor ingresa la hora que es actualmente (Formato 24h) y tu nombre: "
          << endl
          << "Hora: ";
     cin >> time;
@@ -21,7 +21,7 @@ int main()
              << nombre << endl;
     }
 
-    else if (time > 7 && time < 12)
+    else if (time >= 7 && time < 12)
     {
         cout << "Buen dia " << nombre << endl;
     }
@@ -29,11 +29,11 @@ int main()
     {
         cout << "Buen Provecho " << nombre << endl;
     }
-    else if (time > 13 & time < 19)
+    else if (time >= 13 && time <= 18)
     {
         cout << "Buenas Tardes " << nombre << endl;
     }
-    else if (time > 19 && time < 24)
+    else if (time > 18 && time <= 24)
     {
         cout << "Buenas Noches " << nombre << endl;
     }

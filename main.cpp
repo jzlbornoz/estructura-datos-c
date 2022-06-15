@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib> // Libreria para la limpieza de la pantalla
 
 using namespace std;
 
@@ -17,6 +18,7 @@ int main()
     float nota3;
     float nota4;
     char respuesta = 'y';
+    system("clear");
     do
     {
         cout << "=======Bienvenido========" << endl
@@ -24,6 +26,7 @@ int main()
         cin >> nota1;
         cin >> nota2;
         cin >> nota3;
+        "Estas desapobado, esfuerzate mas";
         cin >> nota4;
         cout << "Estas son tus notas: " << endl
              << nota1 << endl
@@ -39,6 +42,7 @@ int main()
         else
         {
             char respuesta = 'n';
+            system("clear");
         }
     } while (respuesta == 'n');
 }
