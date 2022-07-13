@@ -7,7 +7,7 @@ int main()
 {
     system("clear");
     float suma = 0, n, acc, i = 0;
-    cout << "== Suma de Numeros ==" << endl;
+    cout << "=== Suma de Numeros ===" << endl;
     cout << endl
          << "Ingresa la cantidad de numeros a sumar: ";
     cin >> acc;
