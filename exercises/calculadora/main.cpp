@@ -36,38 +36,51 @@ int main()
     system("clear");
     int opcion;
     float c, d;
+    char exit = 'n';
     cout << "=== Calculadora ===" << endl;
-    cout << "Ingresa los valores a trabajar: " << endl;
-    cin >> c;
-    cin >> d;
-    cout << "OPERACIONES: " << endl
-         << "1: Sumar" << endl
-         << "2: Restar" << endl
-         << "3: Multiplicar" << endl
-         << "4: Dividir" << endl;
-    cin >> opcion;
 
-    switch (opcion)
+    do
     {
-    case 1:
-        system("clear");
-        cout << suma(c, d) << endl;
-        break;
-    case 2:
-        system("clear");
-        cout << res(c, d) << endl;
-        break;
-    case 3:
-        system("clear");
-        cout << mult(c, d) << endl;
-        break;
-    case 4:
-        system("clear");
-        cout << div(c, d) << endl;
-        break;
-
-    default:
-        cout << "Ingresa una opcion valida: ";
-        break;
-    }
+        cout << "Ingresa los valores a trabajar: " << endl;
+        cin >> c;
+        cin >> d;
+        cout << "OPERACIONES: " << endl
+             << "1: Sumar" << endl
+             << "2: Restar" << endl
+             << "3: Multiplicar" << endl
+             << "4: Dividir" << endl
+             << "5: Salir" << endl;
+        cin >> opcion;
+        switch (opcion)
+        {
+        case 1:
+            system("clear");
+            cout << suma(c, d) << endl
+                 << endl;
+            break;
+        case 2:
+            system("clear");
+            cout << res(c, d) << endl
+                 << endl;
+            break;
+        case 3:
+            system("clear");
+            cout << mult(c, d) << endl
+                 << endl;
+            break;
+        case 4:
+            system("clear");
+            cout << div(c, d) << endl
+                 << endl;
+            break;
+        case 5:
+            exit = 'y';
+            cout << "Saliendo ... " << endl;
+            break;
+        default:
+            system("clear");
+            cout << "Ingresa una opcion valida: " << endl;
+            break;
+        }
+    } while (exit == 'n');
 }
