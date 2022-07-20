@@ -7,15 +7,23 @@ int main()
 {
     system("clear");
     int table, i, mult;
-    cout << "== Tabla de multiplicar" << endl
-         << "Ingresa la tabla a calcular" << endl;
-    cin >> table;
-    system("clear");
-    cout << "Tabla del " << table << ": " << endl << endl;
-    for (i = 0; i <= 10; i++)
+    char r = 'n';
+    while (r == 'n')
     {
-        mult = i * table;
-        cout << i << "x" << table << " = ";
-        cout << mult << endl;
+        cout << "== Tabla de multiplicar" << endl
+             << "Ingresa la tabla a calcular" << endl;
+        cin >> table;
+        system("clear");
+        cout << "Tabla del " << table << ": " << endl
+             << endl;
+        int i = 0;
+        while (i <= 10)
+        {
+            mult = i * table;
+            cout << i << "x" << table << " = ";
+            cout << mult << endl;
+            i = i + 1;
+        }
+        cout << endl;
     }
 };
