@@ -41,7 +41,30 @@ int insertar_desp (p, dato, ref)
 
 		return 0;
 	}
-	
+
+int insertar_deswp(p, dato, ref)
+struct nodo **p;
+int dato;
+int ref;
+{
+	struct nodo *q;
+	q = *p;
+	while ((q != NULL) && (q->info != ref))
+		q = q->sig;
+	if (q == NULL)
+		printf("El nodo de referencia no existe.\n");
+	else
+	{
+		struct nodo *nuevo;
+		nuevo = localizar;
+		nuevo->info = dato;
+
+		nuevo->sig = q->sig;
+		q->sig = nuevo;
+	}
+
+	return 0;
+}
 	int retirar (p)
 		struct nodo **p;
 		{
